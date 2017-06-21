@@ -1,0 +1,11 @@
+## Welcome to CamUtils ~ By Camzie99 ##
+
+## Required Details ## 
+name: CamUtils
+version: 0.01a
+main: net.camtech.camutils.CamUtils
+author: Camzie99
+
+## Extra Details ##
+description: CamUtils is a library file which aims to provide simple access to (possibly) complex Bukkit functions!
+website: http://www.cam-tech.net
