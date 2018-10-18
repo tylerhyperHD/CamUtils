@@ -45,6 +45,6 @@ public class CamUtils extends JavaPlugin
                     Bukkit.getPluginManager().callEvent(event);
                 }
             }
-        }.runTaskLater(this.plugin, 20L * 10L);
+        }.runTaskLater(CamUtils.plugin, 20L * 10L);
     }
 }

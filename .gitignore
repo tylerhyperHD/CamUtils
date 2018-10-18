@@ -2,3 +2,7 @@
 *.jar
 
 target/*
+/target/
+.classpath
+.project
+*.prefs

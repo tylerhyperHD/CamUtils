@@ -84,7 +84,8 @@ public class CUtils_Player
         return lastBlock.getLocation();
     }
 
-    public Location getTargetBlockNoTrans(int blocks)
+    @SuppressWarnings({ "rawtypes", "deprecation", "unchecked" })
+	public Location getTargetBlockNoTrans(int blocks)
     {
         Set set = new HashSet<>();
         for (Material material : Material.values())
@@ -106,7 +107,7 @@ public class CUtils_Player
 
     public boolean isTargetingEntity(int blocks)
     {
-        for (Block block : player.getLineOfSight((HashSet<Byte>) null, blocks))
+        for (Block block : player.getLineOfSight((Set<Material>) null, blocks))
         {
             Location loc = block.getLocation();
             for (Entity e : player.getWorld().getLivingEntities())
@@ -127,7 +128,7 @@ public class CUtils_Player
 
     public LivingEntity getTargetEntity(int blocks)
     {
-        for (Block block : player.getLineOfSight((HashSet<Byte>) null, blocks))
+        for (Block block : player.getLineOfSight((Set<Material>) null, blocks))
         {
             Location loc2 = block.getLocation();
             for (LivingEntity e : player.getWorld().getLivingEntities())
